@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    .container
+        .row
+            .col-md-5
+                form(method="POST",action="/user/signup")
+                    .modal-body
+                        .form-group
+                            laber(for="signupName") 用户名
+                            input#signupName.form-control(name="user[name]",type="text")
+                        .form-group
+                            laber(for="signupPassword") 密码
+                            input#signupPassword.form-control(name="user[password]",type="text")
+                    .modal-footer
+                        button.btn.btn-default(type='submit') 提交
+
+
+
+
+
+
+
+
+
+
+
